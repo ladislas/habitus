@@ -1,0 +1,52 @@
+# Habitus
+# SPDX-License-Identifier: Apache-2.0
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+
+disabled_rules: []
+
+excluded:
+  - .build
+  - Tuist
+  - Derived
+
+trailing_comma:
+  mandatory_comma: true
+
+type_name:
+  min_length: 4
+  max_length:
+    warning: 40
+    error: 50
+  allowed_symbols: ["_"]
+
+identifier_name:
+  min_length:
+    error: 4
+  excluded:
+    - app
+    - id
+    - i
+    - key
+    - lhs
+    - log
+    - new
+    - rhs
+    - tag
+    - url
+    - URL
+
+line_length:
+  warning: 120
+  error: 160
+  ignores_urls: true
+  ignores_interpolated_strings: true
+
+type_body_length:
+  warning: 300
+
+reporter: "emoji"
