@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Check Swift formatting"
+set -euo pipefail
+
+swiftformat . --lint
