@@ -1,0 +1,22 @@
+schema: spec-driven
+
+context: |
+  Product: Habitus, an open-source iOS + macOS interval reminder app
+  Tech stack: Swift 6, SwiftUI, SwiftData
+  Platforms: iOS and macOS
+  Sync: iCloud sync
+  Architecture: local-first, no backend, no subscription
+  Domain: recurring intra-day reminders with flexible scheduling, snoozing, skipping, and completion tracking
+  Workflow: use OpenSpec for meaningful multi-step work, not for tiny obvious edits
+  Repo conventions: gitmoji commits and branch names following <firstname>/<type>/<topic-more_info>
+
+rules:
+  proposal:
+    - Keep proposals concise and centered on what changes and why
+    - Call out scope boundaries when they matter
+  design:
+    - Prefer native Apple-platform solutions that fit SwiftUI and SwiftData well
+    - Avoid introducing backend services unless explicitly required
+  tasks:
+    - Break work into focused, independently verifiable steps
+    - Prefer small tasks that map cleanly to reviewable commits
