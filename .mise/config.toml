@@ -1,2 +1,7 @@
 [tools]
+tuist = "4.161.0"
+swiftlint = "0.63.2"
+swiftformat = "0.60.1"
+hk = "1.38.0"
+pkl = "0.31.0"
 markdownlint-cli2 = "0.21.0"
