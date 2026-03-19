@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Lint Swift sources (fix then check)"
+set -euo pipefail
+
+swiftlint --fix --quiet
+swiftlint --quiet --strict

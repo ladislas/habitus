@@ -1,0 +1,76 @@
+# Habitus
+# Copyright Ladislas de Toldi
+# SPDX-License-Identifier: Apache-2.0
+
+# Swift version
+--swiftversion 6.0
+
+# Formatting
+--indent 4
+--indentcase true
+--maxwidth 120
+--linebreaks lf
+
+# Wrapping
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--closingparen balanced
+--funcattributes prev-line
+--typeattributes prev-line
+--wrapreturntype if-multiline
+--wrapeffects if-multiline
+
+# Spacing
+--ranges no-space
+--emptybraces no-space
+--elseposition same-line
+--guardelse auto
+
+# Self
+--self insert
+
+# Imports
+--importgrouping testable-last
+
+# Access control
+--extensionacl on-extension
+
+# Header
+--header // Habitus\n// Copyright Ladislas de Toldi\n// SPDX-License-Identifier: Apache-2.0
+
+# Naming
+--hexliteralcase uppercase
+--acronyms ID,URL,UUID
+
+# Trailing commas
+--trailingcommas always
+
+# Yoda conditions
+--yoda-swap always
+
+# Opt-in rules to enable
+--enable acronyms
+--enable blankLineAfterSwitchCase
+--enable blankLinesAfterGuardStatements
+--enable blockComments
+--enable isEmpty
+--enable markTypes
+--enable noGuardInTests
+--enable organizeDeclarations
+--enable preferFinalClasses
+--enable preferSwiftTesting
+--enable privateStateVariables
+--enable propertyTypes
+--enable singlePropertyPerLine
+--enable testSuiteAccessControl
+--enable unusedPrivateDeclarations
+--enable validateTestCases
+--enable wrapConditionalBodies
+--enable wrapEnumCases
+--enable wrapMultilineConditionalAssignment
+--enable wrapMultilineFunctionChains
+--enable wrapSwitchCases
+
+# Explicitly disabled rules
+--disable blankLinesBetweenImports
