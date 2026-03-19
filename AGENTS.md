@@ -1,5 +1,22 @@
 # Project Guidelines
 
+## AI Tooling
+
+This project uses [opencode](https://opencode.ai) as the AI coding assistant.
+
+- You are running inside opencode, NOT Claude Code, Cursor, Codex, or any other vendor CLI
+- Skills, rules, and workflow configurations live in `.opencode/`
+- Do NOT create or suggest `.claude/`, `.cursor/`, or other vendor-specific directories
+
+## OpenSpec
+
+- OpenSpec is available in this repo as the planning layer for meaningful multi-step changes.
+- OpenSpec artifacts live under `openspec/` and repo-local commands/skills live under `.opencode/`.
+- Use OpenSpec for non-trivial features, refactors, migrations, and ambiguous bugfixes.
+- Skip OpenSpec for tiny obvious edits that do not benefit from proposal/spec/task artifacts.
+- Commit meaningful OpenSpec artifacts when they preserve rationale, review context, or implementation history.
+- Keep the human in the loop: proposal, design, specs, and tasks should guide implementation rather than replace review and manual judgment.
+
 ## Git Commits
 
 This repo uses [gitmoji](https://gitmoji.dev). Commit format:
@@ -36,9 +53,3 @@ Always create a branch — keep `main` clean.
 
 1. `git checkout main`
 2. `git mnoff <branch-name>`
-
-## OpenSpec
-
-- Use OpenSpec in this repo for meaningful multi-step work, not for tiny obvious edits.
-- Commit meaningful OpenSpec artifacts under `openspec/` when they preserve rationale and review context.
-- Keep the human in the loop: proposal, design, specs, and tasks should guide implementation rather than replace review and manual judgment.
