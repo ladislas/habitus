@@ -17,6 +17,17 @@ This project uses [opencode](https://opencode.ai) as the AI coding assistant.
 - Commit meaningful OpenSpec artifacts when they preserve rationale, review context, or implementation history.
 - Keep the human in the loop: proposal, design, specs, and tasks should guide implementation rather than replace review and manual judgment.
 
+## Tuist
+
+This project uses [Tuist](https://tuist.dev) for Xcode project generation following TMA (The Modular Architecture).
+
+- Each feature module can have up to 5 targets: `Feature`, `FeatureInterface`, `FeatureTests`, `FeatureTesting`, `FeatureExample`
+- Modules depend on each other via Interface targets only
+- Prefer `buildableFolders` over `sources`/`resources` globs
+- Directory convention: `Tuist/` at root for config/helpers/dependencies, `Projects/` for per-module manifests
+- Full docs: https://docs.tuist.dev/en/guides/features/projects
+- Operational skill with build/test/generation workflows: `.opencode/skills/tuist/SKILL.md`
+
 ## Git Commits
 
 This repo uses [gitmoji](https://gitmoji.dev). Commit format:
