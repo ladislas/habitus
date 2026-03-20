@@ -59,7 +59,6 @@
 --enable preferFinalClasses
 --enable preferSwiftTesting
 --enable privateStateVariables
---enable propertyTypes
 --enable singlePropertyPerLine
 --enable testSuiteAccessControl
 --enable unusedPrivateDeclarations
