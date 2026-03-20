@@ -41,7 +41,6 @@
 
 # Naming
 --hexliteralcase uppercase
---acronyms ID,URL,UUID
 
 # Trailing commas
 --trailingcommas always
@@ -50,7 +49,6 @@
 --yoda-swap always
 
 # Opt-in rules to enable
---enable acronyms
 --enable blankLineAfterSwitchCase
 --enable blankLinesAfterGuardStatements
 --enable blockComments
