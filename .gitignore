@@ -61,6 +61,11 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
+# Tuist
+Derived/
+*.xcodeproj
+*.xcworkspace
+
 # OpenCode
 .opencode/node_modules/
 .opencode/bun.lock
